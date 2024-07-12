@@ -1,0 +1,13 @@
+{% block content %}
+
+<h1 style="color: #C25100;">Catrgories</h1>
+
+<ul>
+  {% for x in mycategories %}
+    <li>{{ x.name }}</li>
+  {% endfor %}
+</ul>
+
+ <p><a href="/">HOME</a></p>
+
+{% endblock %}

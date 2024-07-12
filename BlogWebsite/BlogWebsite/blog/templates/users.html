@@ -1,0 +1,14 @@
+{% block content %}
+
+<h1 style="color: #C25100;">Users</h1>
+
+<ul>
+  {% for x in myusers %}
+    <li> Username: {{ x.username }} | Email: {{ x.email }}</li>
+  {% endfor %}
+</ul>
+
+<p><a href="/">HOME</a></p>
+
+{% endblock %}
+

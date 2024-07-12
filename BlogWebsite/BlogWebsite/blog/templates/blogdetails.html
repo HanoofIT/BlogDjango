@@ -1,0 +1,18 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ mypost.title }} {% endblock %}
+
+
+{% block content %}
+  <h1 style="color: #C25100;">{{ mypost.title }} </h1>
+
+<p>Content: {{ mypost.content }}</p>
+<p>Categorey: {{ mypost.category }}</p>
+<p>Date Published: {{ mypost.date_published }}</p>
+
+
+
+<p>Back to <a href="/blogs">Posts</a></p>
+
+{% endblock %}

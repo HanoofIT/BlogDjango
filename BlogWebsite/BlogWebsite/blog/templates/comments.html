@@ -1,0 +1,16 @@
+{% block content %}
+
+
+<h1 style="color: #C25100;">Comments</h1>
+
+<ul>
+  {% for x in mycomments %}
+    <h2> Post: {{ x.postd }}</h2>
+    <li>Comment: {{ x.content }}</li>
+  {% endfor %}
+</ul>
+
+<p><a href="/">HOME</a></p>
+
+{% endblock %}
+
