@@ -15,7 +15,7 @@ def blogUser(request):
 
 
 def blogPost(request):
-    myposts = post.objects.all().values()
+    myposts = post.objects.all()
     template = loader.get_template('blogs.html')
     context = {
         'myposts': myposts,

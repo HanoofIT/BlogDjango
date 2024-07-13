@@ -13,6 +13,15 @@
   <ul>
     {% for x in myposts %}
       <li><a href="details/{{ x.id }}">{{ x.title }} </a></li>
+      
+      <!-- === to show comments of post === -->
+        {% for com in x.comments.all %}
+          <ul>
+            <li>{{com}}</li>
+          </ul>
+        {% endfor %}
+        <!-- ============================== -->
+
     {% endfor %}
   </ul>
 
