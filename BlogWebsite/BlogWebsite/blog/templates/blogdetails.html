@@ -10,9 +10,13 @@
 <p>Content: {{ mypost.content }}</p>
 <p>Categorey: {{ mypost.category }}</p>
 <p>Date Published: {{ mypost.date_published }}</p>
-
-
-
+  <!-- === to show post comments === -->
+  <ul>
+    {% for com in mypost.comments.all %}
+      <li>{{com}}</li>
+    {% endfor %}
+  </ul>
+  <!-- ============================== -->
 <p>Back to <a href="/blogs">Posts</a></p>
 
 {% endblock %}
